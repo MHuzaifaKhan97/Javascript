@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(56, 91, 107);
+}
+a{
+    color: white;
+}
+a:hover{
+    color: white;
+    text-decoration: none;
+}
+#panelAdmin{
+    background: transparent;
+}
+#signUp{
+    background: transparent;
+}
+#p1{
+    background: transparent;
+}
+#headingm{
+    font-family: monospace;
+    font-size: 40px;
+}

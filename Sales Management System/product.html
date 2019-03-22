@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SMS - Products </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./product.css">
+</head>
+
+<body>
+
+    <div class="navbar navbar-default">
+        <div class="container-fluid">
+            <a href="./product.html" class="navbar-brand">
+                <span class="glyphicon glyphicon-tasks"> </span>
+                Sales Management System - Products
+            </a>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="./admin.html">
+                        <span class="glyphicon glyphicon-user"></span> Home</a>
+                </li>
+                <li>
+                    <a href="./sell.html">
+                    <span class="glyphicon glyphicon-shopping-cart"></span> Sell</a>
+                </li>
+                <li>
+                    <a href="./product.html">
+                        <span class="glyphicon glyphicon-tag"></span> Products</a>
+                </li>
+                <!-- <li id="addProduct" >
+                    <a href="./addProduct.html"><span class="glyphicon glyphicon-plus"></span> Add Product</a>
+                </li> -->
+                <li class="dropdown">
+                    <a href="#" data-toggle="dropdown">
+                        <span class="glyphicon glyphicon-user"></span>
+                        Muhammad Huzaifa (Admin)
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="./index.html">
+                                <span class="glyphicon glypicon-log-ouy"></span> Logout</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container" id="AdminProducts">
+        <div class="col-md-12">
+            <form action="" class="col-md-6 ">
+                <h2 class="text-center">Search Product</h2>
+                <div class="input-group">
+                    <input type="search" class="form-control" id="searchBox" placeholder="Search..." />
+                    <div class="input-group-btn">
+                        <input type="button" value="Search" class="btn btn-primary"  onclick="search();">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+
+            <div id="p1" class="panel panel-info col-md-6">
+                    <div  class="panel-header text-center">
+                        <h2 class="page-header" >Add Product</h2>
+                    </div>
+                    <div class="panel-body">
+                            <form action="">
+                                    <div class="form-group">
+                                        <input type="text" placeholder="Product Name.." id="pName" class="form-control" />
+                                    </div>
+                        
+                                    <div class="form-group">
+                                        <input type="text" id="pPrice" placeholder="Product Price" class="form-control" />
+                                    </div>
+                        
+                                    <div class="form-group">
+                                        <input type="text" id="pRam" placeholder="Ram" class="form-control" />
+                                    </div>
+                        
+                                    <div class="form-group">
+                                            <input type="text" id="pStorage" placeholder="Storage" class="form-control" />
+                                        </div>
+                            
+                                    <div class="form-group">
+                                        <input type="text" id="pCamera" placeholder="Camera" class="form-control" />
+                                    </div>
+                        
+                                    <div class="form-group">
+                                        <input type="text" id="pCpu" placeholder="CPU" class="form-control" />
+                                    </div>
+                                    <!-- <div class="form-group">
+                                        <input type="file" id="pImg"/>
+                                    </div> -->
+                                    <div class="form-group">
+                                            <!-- <button onclick="addProduct();" class="btn btn-warning btn-block"><span class="glyphicon glyphicon-plus"></span> Add Product</button> -->
+                                            <input type="button" onclick="addProduct();" class="btn btn-warning btn-block" value="Add Product">
+                                    </div>
+                                </form>
+                    </div>
+                </div>
+           
+        </div>
+        <h1 class="page-header">IPhone</h1>
+
+        <div class="row">
+            <div id="panel1" class="panel panel-info col-md-3">
+                <div id="bName1" class="panel-heading text-center bNames">
+                    IPhone 4
+                </div>
+                <div class="panel-body">
+                    <a href=""><img src="./Images/4.jpg" width="100%" class="thumbnail"></a>
+                </div>
+                <div class="panel-footer">
+                    <label for="" id="bPrice1">Resolution:640x960pixels RAM:512MB iOS:6.1.3 Storage:8GB</label>
+                    <button class="btn btn-info btn-block" onclick="editItems('bName1','bPrice1')">Edit</button>
+                    <button class="btn btn-danger btn-block" onclick="deleteItem('panel1')">Delete</button>
+                </div>
+            </div>
+            <div id="panel2" class="panel panel-info col-md-3">
+                <div class="panel-heading text-center bNames" id="bName2">
+                    IPhone 4s
+                </div>
+                <div class="panel-body">
+                    <a href=""><img src="./Images/4s.jpg" width="100%" height="100%" alt="" class="thumbnail"></a>
+                </div>
+                <div class="panel-footer">
+                    <label for="" id="bPrice2">Resolution:640x960pixels RAM:512MB iOS:6.1.3 Storage:8GB</label>
+                    <button class="btn btn-info btn-block" onclick="editItems('bName2','bPrice2')">Edit</button>
+                    <button class="btn btn-danger btn-block" onclick="deleteItem('panel2')">Delete</button>
+                </div>
+            </div>
+            <div class="panel panel-info col-md-3" id="panel3">
+                <div class="panel-heading text-center bNames" id="bName3">
+                    IPhone 5
+                </div>
+                <div class="panel-body">
+                    <a href=""><img src="./Images/5.jpg" width="100%" height="100%" alt="" class="thumbnail"></a>
+                </div>
+                <div class="panel-footer">
+                    <label for="" id="bPrice3">Resolution:640x960pixels RAM:1024MB iOS:6.1.4 Storage:8GB</label>
+                    <button class="btn btn-info btn-block" onclick="editItems('bName3','bPrice3')">Edit</button>
+                    <button class="btn btn-danger btn-block" onclick="deleteItem('panel3')">Delete</button>
+                </div>
+            </div>
+            <div class="panel panel-info col-md-3" id="panel4">
+                <div class="panel-heading text-center bNames" id="bName4">
+                    IPhone 5s
+                </div>
+                <div class="panel-body">
+                    <a href=""><img src="./Images/5s.jpg" width="100%" height="100%" alt="" class="thumbnail"></a>
+                </div>
+                <div class="panel-footer">
+                    <label for="" id="bPrice4">Resolution:640x960pixels RAM:1024MB iOS:6.2.3 Storage:8GB</label>
+                    <button class="btn btn-info btn-block" onclick="editItems('bName4','bPrice4')">Edit</button>
+                    <button class="btn btn-danger btn-block" onclick="deleteItem('panel4')">Delete</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="panel panel-info col-md-3" id="panel5">
+                <div class="panel-heading text-center bNames" id="bName5">
+                    IPhone 6
+                </div>
+                <div class="panel-body">
+                    <a href=""><img src="./Images/6.jpg" width="100%" alt="" class="thumbnail"></a>
+                </div>
+                <div class="panel-footer">
+                    <label for="" id="bPrice5">Resolution:640x960pixels RAM:512MB iOS:6.1.3 Storage:8GB</label>
+                    <button class="btn btn-info btn-block" onclick="editItems('bName5','bPrice5')">Edit</button>
+                    <button class="btn btn-danger btn-block" onclick="deleteItem('panel5')">Delete</button>
+                </div>
+            </div>
+            <div class="panel panel-info col-md-3" id="panel6">
+                <div class="panel-heading text-center bNames" id="bName6">
+                    IPhone 6s
+                </div>
+                <div class="panel-body">
+                    <a href=""><img src="./Images/6s.jpg" width="100%" height="100%" alt="" class="thumbnail"></a>
+                </div>
+                <div class="panel-footer">
+                    <label for="" id="bPrice6">Resolution:640x960pixels RAM:512MB iOS:6.1.3 Storage:8GB</label>
+                    <button class="btn btn-info btn-block" onclick="editItems('bName6','bPrice6')">Edit</button>
+                    <button class="btn btn-danger btn-block" onclick="deleteItem('panel6')">Delete</button>
+                </div>
+            </div>
+            <div class="panel panel-info col-md-3" id="panel7">
+                <div class="panel-heading text-center bNames" id="bName7">
+                    IPhone 7
+                </div>
+                <div class="panel-body">
+                    <a href=""><img src="./Images/7.jpg" width="100%" height="100%" alt="" class="thumbnail"></a>
+                </div>
+                <div class="panel-footer">
+                    <label for="" id="bPrice7">Resolution:640x960pixels RAM:512MB iOS:6.1.3 Storage:8GB</label>
+                    <button class="btn btn-info btn-block" onclick="editItems('bName7','bPrice7')">Edit</button>
+                    <button class="btn btn-danger btn-block" onclick="deleteItem('panel7')">Delete</button>
+                </div>
+            </div>
+            <div class="panel panel-info col-md-3" id="panel8">
+                <div class="panel-heading text-center bNames" id="bName8">
+                    IPhone 8
+                </div>
+                <div class="panel-body">
+                    <a href=""><img src="./Images/8.jpg" width="100%" height="100%" alt="" class="thumbnail"></a>
+                </div>
+                <div class="panel-footer">
+                    <label id="bPrice8" for="">Resolution:640x960pixels RAM:512MB iOS:6.1.3 Storage:8GB</label>
+                    <button class="btn btn-info btn-block" onclick="editItems('bName8','bPrice8')">Edit</button>
+                    <button class="btn btn-danger btn-block" onclick="deleteItem('panel8')">Delete</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Iphone end -->
+        <h1 class="page-header">Samsung</h1>
+        <div class="row">
+            <div class="panel panel-info col-md-3" id="panel9">
+                <div id="bName9" class="panel-heading text-center bNames">Samsung Galaxy S5</div>
+                <div class="panel-body">
+                    <a href="">
+                        <img src="./Images/s5.png" width="100%" alt="" class="thumbnail">
+                    </a>
+                </div>
+                <div class="panel-footer">
+                    <label id="bPrice9" for="">RAM:2GB Storage:16GB Camera:16MP CPU:2.5GHz Quad Core</label>
+                    <button class="btn btn-info btn-block" onclick="editItems('bName9','bPrice9')">Edit</button>
+                    <button class="btn btn-danger btn-block" onclick="deleteItem('panel9')">Delete</button>
+                </div>
+            </div>
+            <div class="panel panel-info col-md-3" id="panel10">
+                    <div id="bName10" class="panel-heading text-center bNames">
+                        Samsung Galaxy S4
+                    </div>
+                    <div class="panel-body">
+                        <a href=""><img src="./Images/s4.jpg" width="100%" height="100%" alt="" class="thumbnail"></a>
+                    </div>
+                    <div  class="panel-footer">
+                        <label id="bPrice10" for="">RAM:1GB Storage:8GB Camera:12MP CPU:2.5GHz Dual Core</label>
+                        <button class="btn btn-info btn-block" onclick="editItems('bName10','bPrice10')">Edit</button>
+                        <button class="btn btn-danger btn-block" onclick="deleteItem('panel10')">Delete</button>
+                    </div>
+                </div>
+                <div class="panel panel-info col-md-3" id="panel11">
+                    <div id="bName11" class="panel-heading text-center bNames">
+                        Samsung Galaxy S3
+                    </div>
+                    <div class="panel-body">
+                        <a href=""><img src="./Images/s3.jpg" width="100%" height="100%" alt="" class="thumbnail"></a>
+                    </div>
+                    <div class="panel-footer">
+                        <label for="" id="bPrice11">RAM:1GB Storage:8GB Camera:8MP CPU:1.8GHz Single Core</label>
+                        <button class="btn btn-info btn-block" onclick="editItems('bName11','bPrice11')">Edit</button>
+                        <button class="btn btn-danger btn-block" onclick="deleteItem('panel11')">Delete</button>
+                    </div>
+                </div>
+                <div class="panel panel-info col-md-3" id="panel12">
+                    <div id="bName12" class="panel-heading text-center bNames">
+                        Core Prime
+                    </div>
+                    <div class="panel-body">
+                        <a href=""><img src="./Images/core.jpg" width="100%" height="100%" alt="" class="thumbnail"></a>
+                    </div>
+                    <div class="panel-footer">
+                        <label id="bPrice12" for="">RAM:1GB Storage:8GB Camera:8MP CPU:1.5GHz Dual Core</label>
+                        <button class="btn btn-info btn-block" onclick="editItems('bName12','bPrice12')">Edit</button>
+                        <button class="btn btn-danger btn-block" onclick="deleteItem('panel12')">Delete</button>
+                    </div>
+                </div>
+        </div>
+        <div class="row">
+                <div class="panel panel-info col-md-3" id="panel13" >
+                    <div class="panel-heading text-center bNames" id="bName13">
+                        Samsung Galaxy S6
+                    </div>
+                    <div class="panel-body">
+                        <a href=""><img src="./Images/s6.jpg" width="100%" alt="" class="thumbnail"></a>
+                    </div>
+                    <div class="panel-footer">
+                        <label for="" id="bPrice13">RAM:3GB Storage:32GB Camera:16MP CPU:2.5GHz Octa Core</label>
+                        <button class="btn btn-info btn-block" onclick="editItems('bName13','bPrice13')">Edit</button>
+                        <button class="btn btn-danger btn-block" onclick="deleteItem('panel13')">Delete</button>
+                    </div>
+                </div>
+                <div class="panel panel-info col-md-3" id="panel14">
+                    <div class="panel-heading text-center bNames" id="bName14">
+                        Samsung S6 Edge
+                    </div>
+                    <div class="panel-body">
+                        <a href=""><img src="./Images/s6plus.jpg" width="100%" height="100%" alt="" class="thumbnail"></a>
+                    </div>
+                    <div class="panel-footer">
+                        <label for="" id="bPrice14">RAM:3GB Storage:64GB Camera:16MP CPU:2.5GHz Octa Core</label>
+                        <button class="btn btn-info btn-block" onclick="editItems('bName14','bPrice14')">Edit</button>
+                        <button class="btn btn-danger btn-block" onclick="deleteItem('panel14')">Delete</button>
+                    </div>
+                </div>
+                <div class="panel panel-info col-md-3" id="panel15">
+                    <div class="panel-heading text-center bNames" id="bName15">
+                        Samsung Galaxy S7
+                    </div>
+                    <div class="panel-body">
+                        <a href=""><img src="./Images/s7.jpg" width="100%" height="100%" alt="" class="thumbnail"></a>
+                    </div>
+                    <div class="panel-footer">
+                        <label for="" id="bPrice15">RAM:4GB Storage:64GB Camera:18MP CPU:3.5GHz Octa Core</label>
+                        <button class="btn btn-info btn-block" onclick="editItems('bName15','bPrice15')">Edit</button>
+                        <button class="btn btn-danger btn-block" onclick="deleteItem('panel15')">Delete</button>
+                    </div>
+                </div>
+                <div class="panel panel-info col-md-3" id="panel16" >
+                    <div class="panel-heading text-center bNames" id="bName16">
+                        Samsung S7 Edge
+                    </div>
+                    <div class="panel-body">
+                        <a href=""><img src="./Images/s7plus.jpg" width="100%" height="100%" alt="" class="thumbnail"></a>
+                    </div>
+                    <div class="panel-footer">
+                        <label for="" id="bPrice16">RAM:4GB Storage:128GB Camera:20MP CPU:3.8GHz Octa Core</label>
+                        <button class="btn btn-info btn-block" onclick="editItems('bName16','bPrice16')">Edit</button>
+                        <button class="btn btn-danger btn-block" onclick="deleteItem('panel16')">Delete</button>
+                    </div>
+                </div>
+            </div>
+
+    </div>
+
+
+    <script src="./app.js"></script>
+</body>
+
+</html>

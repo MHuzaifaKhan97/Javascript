@@ -1,0 +1,37 @@
+.size{
+    font-size: 40px;
+}
+label{
+    font-family: monospace;
+    font-size: 40px;
+}
+#hr{
+    font-size: 30px;
+    margin: 5px;
+}
+#mn{
+    margin: 5px;
+    font-size: 30px;
+}
+#sc{
+    font-size: 30px;
+    margin: 5px;
+}
+body{
+    background: rgb(161, 226, 226);
+}
+/*
+ .panel{
+    background: rgb(161, 226, 226);
+    
+}
+
+.panel-body{
+    background: transparent;    
+}
+.panel-footer{
+    background: transparent;    
+}
+.panel-heading{
+    background: transparent;    
+} */

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>The News Hub</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        .h-divider {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            height: 1px;
+            width: 100%;
+            border-top: 1px solid gray;
+        }
+        marquee{
+            width: 310px;
+            display: inline-block;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <a href="./index.html" class="navbar-brand" style="font-size:26px;font-family:monospace">
+                <span class="glyphicon glyphicon-home"></span> THE NEWS HUB
+            </a>
+            <marquee behavior="slide" direction="left" > Provide 70 News Channel's Updated News</marquee>
+            <form class="nav navbar-nav navbar-right">
+                <div class="form-group">
+                    <select class="form-control" style="margin-top:10px;" id="newsSelector"></select>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div style="height:80px;"></div>
+    <div class="container" id="main" style="border:1px solid lightgray;border-radius:10px">
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

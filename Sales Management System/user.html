@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SMS - User Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="navbar navbar-default">
+        <div class="container-fluid">
+            <a href="./admin.html" class="navbar-brand">
+                <span class="glyphicon glyphicon-tasks"></span> Sale Management System - Home
+            </a>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="./user.html">
+                        <span class="glyphicon glyphicon-user"></span> Home</a>
+                </li>
+                <li>
+                    <a href="./sell.html">
+                        <span class="glyphicon glyphicon-shopping-cart"></span> Sell</a>
+                </li>
+                <li>
+                    <a href="./userProduct.html">
+                        <span class="glyphicon glyphicon-tag"></span> Products</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" data-toggle="dropdown" id="name">
+                        <span class="glyphicon glyphicon-user"></span>
+
+                        <span id="caret" class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="./index.html">
+                                <span class="glyphicon glyphicon-log-out"></span> Logout</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="page-header text-center">
+            <h2 id="name2" style="color:white;">
+                Welcome
+            </h2>
+        </div>
+
+
+        <script src="app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+body{
+    padding: 0%;
+    margin: 0%;
+    background-size: 100%;
+    background-color: lightcyan;
+}
+#App{
+    width: 500px;
+    height: 500px;
+    background:linear-gradient(rgb(57, 235, 72),rgb(129, 129, 236));
+    margin-top: 40px;
+    border-radius: 10px;
+}
+/* .box{
+    width: 150px;
+    height: 150px;
+    font-size: 60px;
+} */
+#App{
+
+    width: 570px;
+    height: 580px;
+}
+table{
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-spacing: 25px;
+    border-collapse: separate; 
+    background:linear-gradient(rgb(57, 235, 72),rgb(129, 129, 236));
+    box-shadow: 0px 0px 10px inset;
+    border: 1px solid red;
+    border-radius: 10px;
+}
+
+.box{
+    width: 150px;
+    height: 150px;
+    background-color: rgb(12, 134, 247);
+    border-radius: 120px;
+    margin: 10px;
+    /* color:white; */
+    font-size: 60px;
+    box-shadow: 0px 0px 10px inset;
+}
+.btn{
+    width: 400px;
+    height: 100px;
+    margin-top: 20px;
+    display: block;
+    border-radius: 20px;
+    font-size: 50px;
+    background-color: rgb(12, 134, 247);
+    color: white;
+    border: none;
+}

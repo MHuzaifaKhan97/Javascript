@@ -1,0 +1,92 @@
+body{
+    padding: 0%;
+    margin: 0%;
+    background-color: rgb(33, 151, 160);
+}
+
+#main{
+    max-width: 80%;
+    min-width: 40%;
+     min-height: 600px;
+    max-height: auto;
+    /* height: auto; */
+    background-color: rgb(80, 74, 74);
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 0px white;
+}
+.h1{
+    color: white;
+    font-size: 50px;
+    font-family: monospace;
+    font-variant-caps: all-petite-caps;
+    /* position: absolute; */
+}
+#name{
+    /* padding-left: 50px;
+    padding-top: 30px;
+    float: left; */
+    color: white;
+    font-family: monospace;
+    font-size: 50px;
+}
+#opt{
+    color: white;
+    font-family: monospace;
+    font-size: 35px;
+    font-variant-caps: all-petite-caps;
+    display: inline-block;
+
+}
+/* #name2{
+    padding-left: 520px;
+    padding-top: 30px;
+    float: left;
+    color: white;
+    font-family: monospace;
+    font-size: 30px;
+} */
+
+button{
+    width: 160px;
+    height: 60px;
+    border: none;
+    border-radius: 4px;
+    display: block;
+    margin: 5px;
+    font-family: monospace;
+    font-size: 22px;
+    font-weight: bold;
+    font-variant-caps: all-petite-caps;
+    color: white;
+    background-color: rgb(117, 124, 124);
+}
+button:hover{
+    color:  rgb(117, 124, 124);
+    background-color: white;
+}
+.footer{
+    float: left;
+    padding-top: 55px;
+    padding-left: 10px;
+    color: white;
+    font-size: 20px;
+    font-family: monospace;
+    clear: both;
+}
+#myClock{
+    font-size: 30px;
+    color: rgb(247, 214, 214);
+    font-weight: bold;
+    display: inline-block;
+    float: left;
+    padding-left: 10px; 
+
+
+}
+.time{
+    font-family: monospace;
+    font-size: 30px;
+    color: white;
+    float: left;
+    padding-left: 400px;
+}

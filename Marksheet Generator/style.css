@@ -1,0 +1,82 @@
+body{
+    padding: 0%;
+    margin: 0%;
+
+}
+#main{
+    background-color: rgb(105, 238, 105);
+    width: 100%;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-variant-caps: petite-caps;
+    margin: 10px;
+    font-size: 40px;
+}
+#tbl{
+    margin: 10px;
+    width: 80%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 32px;
+    height: 500px;
+}
+
+#submit{
+    width: 150px;
+    height: 50px;
+    border: none;
+    background-color: rgb(30, 223, 30);
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+#submit:hover{
+
+    box-shadow: 2px 2px 3px 3px rgb(4, 92, 4);
+}
+
+#marksheet{
+    width: 100%;
+    height: 670px;
+}
+
+#marksheet-content{
+    width: 80%;
+    height: 600px;
+    box-shadow: 2px 2px 2px 2px gray;
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.tdwidth{
+    width: 30%;
+}
+#tbl2{
+    width: 90%;
+    /* border: 2px solid black; */
+    margin-left: 50px;
+    float: left;
+    font-weight: bold;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-variant-caps: petite-caps;
+}
+tr td{
+    /* border:  1px solid black; */
+    /* width: 70%; */
+}
+#tbl3{
+    width: 90%;
+    padding-left: 100px;
+    float: left;
+    font-weight: bold;
+    line-height: 40px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-variant-caps: petite-caps;
+}
